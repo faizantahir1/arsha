@@ -1,0 +1,79 @@
+main{
+    background: #37517E;
+}
+
+.para{
+    color: #AFB9CB;
+}
+
+.head{
+    font-size: 3rem;
+}
+
+.main-img{
+    animation: move 1.5s linear infinite alternate-reverse;
+}
+
+
+@keyframes move{
+    from{
+     transform: translateY(0);
+    }to{
+        transform: translateY(-20px);
+    }
+}
+
+.brand{
+    transition: all 0.4s;
+    filter: grayscale(100%);
+}
+
+.brand:hover{
+    filter: grayscale(0)
+}
+
+.abt{
+    color: #37517E;
+}
+
+.grey{
+    height: 2px;
+    background: lightgray;
+    width: 10%;
+    margin: auto;
+    position: relative;
+}
+
+.blue{
+    width: 40%;
+    position: absolute;
+    height: 3px;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.eum{
+    color: #37517E;
+}
+
+.accordion-button:hover p{
+    color:var(--bs-bkue) !important ;
+}
+
+
+
+
+
+
+@media only screen and (max-width:900px){
+    .main-img{
+        animation-play-state: paused;
+    }
+}
